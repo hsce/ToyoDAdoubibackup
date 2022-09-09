@@ -526,7 +526,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p>输入上面代码回车后会提示你输入当前用户的密码，输入并回车后，没有报错就继续下面的步骤安装ShadowsocksR。</p>
 <hr />
 <p><strong>v2.0.0 版本以后的脚本，请先卸载旧脚本ShadowsocksR服务端，再重新安装！</strong></p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
+<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/uuou/doubibackup/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh
 </pre>
 <p>下载运行后会提示你输入数字来选择要做什么。</p>
 <p>输入<span style="color: #ff6464;"><strong> 1</strong></span> ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 <strong>端口/密码/加密方式/ 协议/混淆（混淆和协议是通过输入数字选择的）</strong> 等参数。</p>
@@ -733,7 +733,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p>本脚本已经集成了 安装/卸载 锐速(ServerSpeeder)开心版，但是是否支持请查看 <a href="https://www.91yun.co/wp-content/plugins/91yun-serverspeeder/systemlist.html" target="_blank" rel="noopener">Linux支持内核列表</a> 。（锐速不支持OpenVZ）</p>
 <p><strong>v2.0.0 以前的旧版本下载地址：</strong></p>
 <p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssr_old.sh &amp;&amp; chmod +x ssr_old.sh &amp;&amp; bash ssr_old.sh</pre>
+<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/uuou/doubibackup/master/ssr_old.sh &amp;&amp; chmod +x ssr_old.sh &amp;&amp; bash ssr_old.sh</pre>
 <p></p></div>
 <h3 id="ShadowsocksR目前支持的协议和混淆：">ShadowsocksR目前支持的协议和混淆：</h3>
 <p><strong>协议（Protocol）：origin</strong>，auth_sha1_v4，<strong>auth_aes128_md5，auth_aes128_sha1，auth_chain_a，auth_chain_b</strong></p>
@@ -774,8 +774,8 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p>我发现有一些人的VPS的 apt源有问题，导致安装失败，所以我这里写上如何更换 apt源。</p>
 <p><strong>本步骤仅适合 Debian 系统，Ubuntu系统自行搜索 apt源。</strong></p>
 <p>下面的手动改的方法一些人可能嫌麻烦，所以你们可以这样字更换apt源。</p>
-<p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources" target="_blank" rel="noopener">选一个近一些合适</a>的，然后替换下面代码中 <strong>us.sources.list</strong> 的 us 。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list
+<p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/uuou/doubibackup/tree/master/sources" target="_blank" rel="noopener">选一个近一些合适</a>的，然后替换下面代码中 <strong>us.sources.list</strong> 的 us 。</p>
+<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://raw.githubusercontent.com/uuou/doubibackup/master/sources/us.sources.list
 rm -rf /etc/apt/sources.list
 cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 <h4 id="手动更换（上面的命令执行完毕就不要重复执行这个了）">手动更换（上面的命令执行完毕就不要重复执行这个了）</h4>
@@ -1272,7 +1272,7 @@ We trust you have received the usual lecture from the local System Administrator
 <li class="comment odd alt thread-odd thread-alt depth-1" id="comment-44042"><div class="c-avatar"><div class="c-main" id="div-comment-44042">这个脚本 没更新 啊
 1. 修复 脚本交互时退格键提示 ^?、^H 以及方向键等按键无法使用的问题(也是提示类似符号)。<div class="c-meta"><span class="c-author">四十九</span>2018-10-06 19:06 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/ss-jc42/?replytocom=44042#respond' onclick='return addComment.moveForm( "div-comment-44042", "44042", "respond", "1677" )' aria-label='回复给四十九'>回复</a></div></div></div><ul class="children">
 <li class="comment byuser comment-author-toyo bypostauthor even depth-2" id="comment-44048"><div class="c-avatar"><div class="c-main" id="div-comment-44048">脚本更新了，自动更新不行的话，请手动下载更新：
-<pre class="prettyprint linenums" >wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+<pre class="prettyprint linenums" >wget -N --no-check-certificate https://raw.githubusercontent.com/uuou/doubibackup/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 </pre><div class="c-meta"><span class="c-author"><a href='index.html' rel='external nofollow' class='url'>Toyo</a></span>2018-10-06 21:04 <a rel='nofollow' class='comment-reply-link' href='https://doub.io/ss-jc42/?replytocom=44048#respond' onclick='return addComment.moveForm( "div-comment-44048", "44048", "respond", "1677" )' aria-label='回复给Toyo'>回复</a></div></div></div></li><!-- #comment-## -->
 </ul><!-- .children -->
 </li><!-- #comment-## -->
