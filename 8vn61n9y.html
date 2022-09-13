@@ -503,7 +503,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <hr />
 <p>首先为了确保依赖安装正常、完整，我们需要更换系统 软件包源为最新的稳定源<code> jessie </code><span style="color: #ff6464;"><strong>（本步骤必做）</strong></span>。</p>
 <p>默认下面的代码是 美国的镜像源，可以更换下面代码<code> us.sources.list 中的 us </code>，具体可以<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources" target="_blank" rel="noopener">看这里</a>。</p>
-<pre class="prettyprint linenums">mv /etc/apt/sources.list /etc/apt/sources.list.bak &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list
+<pre class="prettyprint linenums">mv /etc/apt/sources.list /etc/apt/sources.list.bak &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/sources/us.sources.list
 </pre>
 <p>然后我们更新软件包列表，并开始安装依赖。</p>
 <pre class="prettyprint linenums">apt-get update

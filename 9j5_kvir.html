@@ -534,7 +534,7 @@ iptables -D INPUT -p udp --dport 8888 -j ACCEPT</pre>
 <p>看看你的代理服务器端口（比如8888、25）是不是存在。</p>
 <h3 id="在VPS上制作在线PAC文件">在VPS上制作在线PAC文件</h3>
 <p>首先安装Caddy，</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh install http.filemanager
+<pre class="prettyprint linenums">wget -N --no-check-certificate https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/caddy_install.sh &amp;&amp; chmod +x caddy_install.sh &amp;&amp; bash caddy_install.sh install http.filemanager
 </pre>
 <p>安装Caddy成功后，继续新建一个虚拟主机文件夹，</p>
 <pre class="prettyprint linenums">mkdir /usr/local/caddy/www &amp;&amp; mkdir /usr/local/caddy/www/pac
@@ -549,7 +549,7 @@ echo ":80 {
 <pre class="prettyprint linenums">/etc/init.d/caddy start
 </pre>
 <p>然后下载PAC文件到虚拟主机文件夹，</p>
-<pre class="prettyprint linenums">wget --no-check-certificate -P "/usr/local/caddy/www/pac" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/proxy.pac
+<pre class="prettyprint linenums">wget --no-check-certificate -P "/usr/local/caddy/www/pac" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/proxy.pac
 </pre>
 <p>编辑PAC文件</p>
 <pre class="prettyprint linenums">vi proxy.pac

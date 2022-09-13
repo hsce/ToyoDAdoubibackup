@@ -507,7 +507,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <h2 id="脚本版本">脚本版本</h2>
 <p><strong>Ver:</strong> 1.1.1</p>
 <h2 id="安装步骤">安装步骤</h2>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/iptables-pf.sh &amp;&amp; chmod +x iptables-pf.sh &amp;&amp; bash iptables-pf.sh
+<pre class="prettyprint linenums">wget -N --no-check-certificate https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/iptables-pf.sh &amp;&amp; chmod +x iptables-pf.sh &amp;&amp; bash iptables-pf.sh
 </pre>
 <p>下载并运行脚本后，先选择<strong> 1. 安装 iptables</strong> ，会检测是否安装 iptables 同时也会进行 iptables 防火墙开机启动加载等配置。</p>
 <h2 id="使用方法">使用方法</h2>
@@ -615,7 +615,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <p>一些VPS的 apt源太老旧，导致无法安装或升级iptables，所以我这里写上如何更换 apt源。所以我只针对这两个系统，Centos的自己去谷歌yum镜像源。</p>
 <p class="toggle" style="margin: 0;"><a href="#">点击展开 查看更多</a></p><div class="toggle-box" style="display: none;"><p></p>
 <p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources" target="_blank" rel="noopener">选一个近一些合适</a>的，然后替换下面代码中 <strong>us.sources.list</strong> 的 <strong>us</strong> 。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list
+<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/sources/us.sources.list
 rm -rf /etc/apt/sources.list
 cp /etc/apt/us.sources.list /etc/apt/sources.list
 </pre>

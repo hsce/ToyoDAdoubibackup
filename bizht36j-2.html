@@ -505,7 +505,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <h3 id="脚本版本">脚本版本</h3>
 <p><strong>Ver:</strong> 1.0.7</p>
 <h2 id="安装步骤">安装步骤</h2>
-<pre class="prettyprint linenums">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/haproxy.sh &amp;&amp; chmod +x haproxy.sh &amp;&amp; bash haproxy.sh
+<pre class="prettyprint linenums">wget -N --no-check-certificate https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/haproxy.sh &amp;&amp; chmod +x haproxy.sh &amp;&amp; bash haproxy.sh
 </pre>
 <p>下载并运行脚本后，会自动检测并开始安装。安装完成后，会提示你输入监听的端口(转发的端口，支持端口段 2333-6666)，欲转发到的IP：</p>
 <pre class="prettyprint linenums">请输入 HaProxy 的 本地监听端口(转发端口) [1-65535](支持端口段: 2333-6666): 10000-20000
@@ -607,7 +607,7 @@ echo "nameserver 8.8.4.4" &gt;&gt; /etc/resolv.conf
 <h3 id="更换 apt源，解决安装错误：[错误] Socat安装失败 等等">更换 apt源，解决安装错误：[错误] Socat安装失败 等等</h3>
 <p>一些VPS的 apt源太老旧，导致无法安装socat，所以我这里写上如何更换 apt源。所以我只针对这两个系统，Centos的自己去谷歌yum镜像源。</p>
 <p>依次输入就可以更换apt源了，下面的代码是以 us美国 为例，你可以自己去这里<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources" target="_blank" rel="noopener">选一个近一些合适</a>的，然后替换下面代码中 <strong>us.sources.list</strong> 的 us 。</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list
+<pre class="prettyprint linenums">wget -N --no-check-certificate -P /etc/apt https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/sources/us.sources.list
 rm -rf /etc/apt/sources.list
 cp /etc/apt/us.sources.list /etc/apt/sources.list</pre>
 <h2 id="更新日志">更新日志</h2>

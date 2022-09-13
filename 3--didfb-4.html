@@ -502,7 +502,7 @@ window.content_index_showTocToggle=false;function content_index_toggleToc(){var 
 <h3 id="安装依赖">安装依赖</h3>
 <p>首先为了确保依赖安装正常、完整，我们需要更换系统 软件包源为最新的稳定源<code> jessie </code>（本步骤必做，否则很容易出错）。</p>
 <p>默认下面的代码是 美国的镜像源，可以更换下面代码<code> us.sources.list 中的 us </code>，具体可以<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources" target="_blank" rel="noopener">看这里</a>。</p>
-<pre class="prettyprint linenums">rm -rf /etc/apt/sources.list &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list
+<pre class="prettyprint linenums">rm -rf /etc/apt/sources.list &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/sources/us.sources.list
 </pre>
 <blockquote><p><strong>注意：</strong>这个更换 镜像源的步骤，<strong>Debian 8、Debian 9 不需要执行</strong>，可以直接跳过，<strong>Debian 7 必须执行！</strong></p></blockquote>
 <p>然后我们更新软件包列表，并开始安装依赖</p>

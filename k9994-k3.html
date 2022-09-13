@@ -512,7 +512,7 @@ cat: /dev/net/tun: File descriptor in bad state
 <h3 id="安装依赖">安装依赖</h3>
 <p>首先为了确保依赖安装正常、完整，我们需要更换系统 软件包源为最新的稳定源<code> jessie </code>（本步骤必做，否则很容易出错）。</p>
 <p>默认下面的代码是 美国的镜像源，可以更换下面代码<code> us.sources.list 中的 us </code>，具体可以<a href="https://github.com/ToyoDAdoubiBackup/doubi/tree/master/sources">看这里</a>。</p>
-<pre class="prettyprint linenums">rm -rf /etc/apt/sources.list &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" "https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/sources/us.sources.list"
+<pre class="prettyprint linenums">rm -rf /etc/apt/sources.list &amp;&amp; wget -N --no-check-certificate -O "/etc/apt/sources.list" "https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/sources/us.sources.list"
 </pre>
 <p>然后我们更新软件包列表，并开始安装依赖：</p>
 <pre class="prettyprint linenums">apt-get install pkg-config build-essential libgnutls28-dev libwrap0-dev liblz4-dev libseccomp-dev libreadline-dev libnl-nf-3-dev libev-dev gnutls-bin -y
@@ -568,7 +568,7 @@ make install
 # 安装后的文件可以不删除，卸载的时候还需要用到。</pre>
 <p>最后我们新建一个配置文件的文件夹：</p>
 <pre class="prettyprint linenums">mkdir /etc/ocserv
-wget -N --no-check-certificate -P "/etc/ocserv" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/ocserv.conf
+wget -N --no-check-certificate -P "/etc/ocserv" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/ocserv.conf
 </pre>
 <p>上面下载的是我根据 ocserv 默认配置文件稍微改了改以适应教程的配置文件。</p>
 <p>如果你想要自己改配置文件可以去看源码默认自带的配置文件：<code> ocserv-0.11.8/doc/sample.config </code></p>
@@ -690,7 +690,7 @@ mv server-key.pem /etc/ocserv/ssl/server-key.pem</pre>
 <p>现在刚才在当前文件夹新建的 ssl 文件夹就没用了，你可以删除它：<code> cd .. &amp;&amp; rm -rf ssl/ </code></p>
 <h2 id="安装服务">安装服务</h2>
 <p>下载我写好的服务脚本并赋予执行权限：</p>
-<pre class="prettyprint linenums">wget -N --no-check-certificate -O "/etc/init.d/ocserv" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/ocserv_debian
+<pre class="prettyprint linenums">wget -N --no-check-certificate -O "/etc/init.d/ocserv" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/ocserv_debian
 chmod +x /etc/init.d/ocserv</pre>
 <h3 id="设置开机启动(可选)">设置开机启动(可选)</h3>
 <pre class="prettyprint linenums">update-rc.d -f ocserv defaults</pre>
@@ -895,12 +895,12 @@ apt-get install -y wget
 		<i class="fa fa-comments-o"></i> <b> (52)</b>个小伙伴在吐槽
 	</div>
 	<ol class="commentlist">
-		<li class="comment even thread-even depth-1" id="comment-44639"><div class="c-avatar"><div class="c-main" id="div-comment-44639"><pre class="prettyprint linenums" >在安装服务脚本命令wget -N --no-check-certificate -O "/etc/init.d/ocserv" https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/ocserv_debian
+		<li class="comment even thread-even depth-1" id="comment-44639"><div class="c-avatar"><div class="c-main" id="div-comment-44639"><pre class="prettyprint linenums" >在安装服务脚本命令wget -N --no-check-certificate -O "/etc/init.d/ocserv" https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/ocserv_debian
 执行后，出现错误：
 WARNING: timestamping does nothing in combination with -O. See the manual
 for details.
 
---2018-10-19 01:31:25--  https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/ocserv_debian
+--2018-10-19 01:31:25--  https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/ocserv_debian
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.120.133
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.120.133|:443... connected.
 HTTP request sent, awaiting response... 404 Not Found

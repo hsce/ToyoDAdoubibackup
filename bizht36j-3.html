@@ -552,10 +552,10 @@ chmod +x aria2c
 mkdir "/root/.aria2"
 
 # 下载 Aria2 的配置文件。
-wget --no-check-certificate -O "/root/.aria2/aria2.conf" "https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/Aria2/aria2.conf"
+wget --no-check-certificate -O "/root/.aria2/aria2.conf" "https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/Aria2/aria2.conf"
 
 # 下载 Aria2 的DHT文件（下载BT的话，DHT会很影响速度的，因为Aria2默认安装没有DHT文件，然后会在每次下载BT的时候收集 DHT信息来新建DHT文件，这会导致一开始使用 Aria2 下载BT速度很慢，下载一个现成的DHT文件能缓解这个情况，当然根据不同资源、不同热度，速度肯定有影响）
-wget --no-check-certificate -O "/root/.aria2/dht.dat" "https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/other/Aria2/dht.dat"
+wget --no-check-certificate -O "/root/.aria2/dht.dat" "https://https://raw.githubusercontent.com/iswxp/ToyoDAdoubibackup/master/other/Aria2/dht.dat"
 
 # 最后新建一个空的文件，用于存放下载任务，这样重启Aria2也不会丢失任务了。
 echo '' &gt; /root/.aria2/aria2.session
